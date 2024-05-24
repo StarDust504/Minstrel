@@ -18,4 +18,9 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log($"Screen width: {Screen.width}; screen height {Screen.height}");
     }
+
+    public void ResetBrightnessScreen()
+    {
+        PlayerPrefs.SetInt("FirstLaunch", 0);
+    }
 }
